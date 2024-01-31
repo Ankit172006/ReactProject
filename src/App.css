@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}   
+.left_side
+{
+    width: 17%;
+    /* height: 200px; */
+}
+.right_side
+{
+    width: 83%;
+}
+.main_content
+{
+    display: flex;
+}

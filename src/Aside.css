@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main_aside
+{
+    background-color:#000 ;
+}
+.aside_part
+{
+    display: flex;
+    gap: 10px;
+}
+.mini_logo svg
+{
+   color: #fff;
+}
+.aside_name a
+{
+   text-decoration: none;
+   color: #fff;
+   font-size: 16px;
+   font-weight: 600;
+}
+.home_aside
+{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 14px;
+    justify-content: space-around;
+    height: 110px;
+}
+.hr
+{
+    height: 0.5px;
+    color: #b3adad;
+    margin: 0;
+    padding: 0;
+}
+.you_aside
+{
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 20px;
+}
+.top_header
+{
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff;
+    padding-left: 20px;
+}
+.channel
+{
+    display: flex;
+    gap: 15px;
+    padding-left: 20px;
+    margin: 5px;
+    align-items: center;
+}
+.sub_img
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub_img img
+{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+.sub_name a
+{  
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.subscription_aside
+{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
