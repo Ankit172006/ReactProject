@@ -9,7 +9,7 @@
 .aside_part
 {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 .mini_logo svg
 {
@@ -20,7 +20,7 @@
    text-decoration: none;
    color: #fff;
    font-size: 16px;
-   font-weight: 600;
+   /* font-weight: 600; */
 }
 .home_aside
 {
@@ -56,8 +56,8 @@
 .channel
 {
     display: flex;
-    gap: 15px;
-    padding-left: 20px;
+    gap: 21px;
+    padding-left: 16px;
     margin: 5px;
     align-items: center;
 }
@@ -78,11 +78,55 @@
     text-decoration: none;
     color: #fff;
     font-size: 16px;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 .subscription_aside
 {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    /* padding-left:0px ; */
+}
+.explore_part
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 15px;
+}
+.last_container
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 15px;
+    padding-top: 20px; 
+}
+.first_row,.second_row,.third_row
+{
+    display: flex;
+    gap: 10px;
+}
+.first_about
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+    /* padding:20px; */
+}
+.first_row a,.second_row a,.third_row a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+.copyright
+{
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px; 
+    padding-top: 20px; 
+    padding-left: 20px;
 }
