@@ -1,19 +1,18 @@
 import React from 'react'
-import video1 from "./video1.mp4"
+
 import "./Main.css"
+// import HoverVideoPlayer from 'react-hover-video-player';
 const Main = function main(Main){
   return (
     <div className='main_container'>
         <div className="upper_container">
             <div className="video_container">
-            <video className='mainimg' poster={Main.posterimg} control >
-            <source src={video1} type="video/mp4"/>
-     </video>
-              {/* <img  src={Main.mainimg} alt="" /> */}
-              
+            <video className='mainimg' poster={Main.posterimg}  controls={Main.controlsvalue} >
+            <source src={Main.videoname} type="video/mp4"/>
+            </video>
             </div>
         </div>
-      <div className="lower_container">
+        <div className="lower_container">
         <div className="lower_left_container">
             <div className="channel_logo_image">
               <img className='channel_logo' src={Main.channellogo} alt="" />

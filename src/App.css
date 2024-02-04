@@ -35,8 +35,16 @@
 {
     padding-left: 261px;
     display: flex;
-    gap: 10px;
+    gap: 20px;
+    flex-direction: column;
+    overflow: scroll;
+    height: 90vh;
    
+}
+.column
+{
+    display: flex;
+    gap:6px;
 }
 .main_container
 {

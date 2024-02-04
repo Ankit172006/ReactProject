@@ -9,7 +9,7 @@
 .aside_part
 {
     display: flex;
-    gap: 20px;
+    gap: 15px;
 }
 .mini_logo svg
 {
@@ -19,17 +19,21 @@
 {
    text-decoration: none;
    color: #fff;
-   font-size: 16px;
-   /* font-weight: 600; */
+   font-size: 14px;
+   display: flex;
+   align-items: center;
+   height: 100%;
+   justify-content: center;
 }
+
 .home_aside
 {
-    padding-left: 20px;
+    padding-left: 23px;
     display: flex;
     flex-direction: column;
-    padding-top: 14px;
-    justify-content: space-around;
-    height: 110px;
+    height: 130px;
+    justify-content: center;
+    gap: 13px;
 }
 .hr
 {
@@ -44,7 +48,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding-left: 20px;
+    padding-left: 23px;
 }
 .top_header
 {
@@ -57,7 +61,7 @@
 {
     display: flex;
     gap: 21px;
-    padding-left: 16px;
+    padding-left: 20px;
     margin: 5px;
     align-items: center;
 }
@@ -77,7 +81,7 @@
 {  
     text-decoration: none;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     /* font-weight: 600; */
 }
 .subscription_aside
@@ -85,14 +89,16 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    /* padding-left:0px ; */
+    padding-top: 20px;
 }
 .explore_part
 {
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    padding-left: 25px;
     gap: 15px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 .last_container
 {
@@ -101,6 +107,7 @@
     padding-left: 20px;
     gap: 15px;
     padding-top: 20px; 
+    padding-bottom: 20px;
 }
 .first_row,.second_row,.third_row
 {
@@ -129,4 +136,12 @@
     font-size: 15px; 
     padding-top: 20px; 
     padding-left: 20px;
+}
+.mini_logo
+{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
