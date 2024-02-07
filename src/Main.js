@@ -1,6 +1,7 @@
 import React from 'react'
 
 import "./Main.css"
+import { Link } from 'react-router-dom'
 // import HoverVideoPlayer from 'react-hover-video-player';
 const Main = function main(Main){
   return (
@@ -20,9 +21,11 @@ const Main = function main(Main){
         </div>
         <div className="lower_right_container">
             <div className="lower_upper_container">
+              <Link to="/display">
                 <div className="video_title">
                   <a className='video_title' href="">{Main.videotitle}</a>
                 </div>
+                </Link>
             </div>
             <div className="lower_lower_container">
                 <div className="channel_name">

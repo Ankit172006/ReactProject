@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.right_video_container
+{
+    width: 402px;
+    height: 98px;
+}
+.mini_video_container
+{
+    width: 168px;
+    height: 100%;
+}
+.mainimg
+{
+    width: 100%;
+    height: 100%;
+}
+.mini_discription
+{
+    width:226px;
+    height: 98px;
+    display: flex;
+    align-items: center;
+}
+.video_titlenew
+{
+    font-size: 14px;
+    width: 92%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+.channel_namenew a,.view_partnew a,.time_partnew a
+{
+    font-size: 12px;
+    margin: 2px;
+    text-decoration:none;
+    color: #615f5f;
+    font-weight: 700;
+}
+.lower_upper_container
+{
+    margin: 2px;
+}

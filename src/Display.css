@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.width_container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+}
+.main_display_container
+{
+    display: flex;
+    justify-content: center;
+    /* height: 500px; */
+    background-color: rgb(0, 0, 0);
+    padding-top: 60px;
+    width: 84.84%;
+}
+.left_display_container
+{
+    width: 877px;
+    /* height: 200px; */
+    background-color: black;
+    margin: 20px;
+}
+.right_display_container
+{
+    width: 426px;
+    height: 1000px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.real_video_container
+{
+    width: 853px;
+    height:479px ;
+    background-color: cornflowerblue;
+}
+.right_video_container
+{
+    width: 402px;
+    height:98px ;
+    display: flex;
+    gap: 10px;
+}
+.mainimgnew
+{
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+.nextvideo_container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.title_main_container
+{
+    color: #fff;
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 22px; 
+    font-weight: 700;
+}
+.channel_logo_main_container
+{
+    width: 52px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.channel_logo_main_container img
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.channel_name_mini_container a
+{
+    font-size: 17px;
+    font-weight: 700;
+    font-family: "Roboto","Arial",sans-serif;
+    text-decoration: none;
+    color: #fff;
+    height: 20px;
+    display: flex;
+}
+.subscriber_button
+{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: end;
+}
+.owner_sub_count a
+{
+    text-decoration: none;
+    font-size: 13px;
+    /* font-weight: 600; */
+    color: #726b6b;
+    font-family: "Roboto","Arial",sans-serif;
+}
+.dropdown-item svg
+{
+  color: #1d1c1c;
+}
+.dropdown-menu
+{
+background-color: #151313;
+height: 150px;
+}
+.lower_toprow_container
+{
+    display: flex;
+    align-items: center;
+    margin:10px ;
+}
+.lower_title_part
+{
+    margin: 10px;
+}
+.btn-secondary
+{
+    border-radius: 30px;
+    /* color: #000000; */
+}
+.like_container,.dislike_container,.like_count
+{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.like_count p
+{
+    margin: 0;
+    margin-right: 8px;
+    color: #fff;
+}
+.like_container svg
+{
+    color: #fff;
+}
+.like_and_dislike
+{
+    display: flex;
+    align-items: center;
+    width: 132px;
+    justify-content: center;
+    background-color: #2e2e2e;
+    border-radius: 30px;
+    height: 36px;
+}
+.share_container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.share_container
+{
+    width: 92px;
+    height: 36px;
+    background-color: #3d3d3d;
+    border-radius: 30px;
+}
+.download_container{
+    width: 125px;
+    height: 36px;
+    background-color: #3d3d3d;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.share_text p
+{
+    margin: 0;
+    color: #fff;
+}
+.action_button
+{
+    display: flex;
+    justify-content: center;
+    width: 540px;
+    align-items: center;
+    gap: 12px;
+    padding-left: 55px;
+}
+.three_button
+{
+    height: 36px;
+    display: flex;
+    /* align-items: center; */
+    gap: 3px;
+    /* justify-content: center; */
+}
+.three_button p,.download_text p
+{
+   margin: 0;
+   color: #fff;
+}
+.three_dot
+{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #3d3d3d;
+}
+.frist_action_button
+{
+    display: flex;
+    width: 380px;
+}
+.channel_namenew
+{
+    height: 16px;
+}
+.owner_sub_count
+{
+    height: 14px;
+    display: flex;
+}
+.discription_part
+{
+    width: 853px;
+    height: 114px;
+    background-color: #1d1b1b;
+    border-radius: 13px;
+    margin-top: 20px;
+}
+.discription_view
+{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 20px;
+}
+.discription_view span
+{
+    margin: 0;
+    margin: 5px;
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 16px;
+    margin: 5px;
+    color: #fff;
+    font-weight: 700;
+}
+.main_discription_part
+{
+    display: flex;
+    padding-left: 20px;
+}
+.main_discription_part span
+{
+    color: #fff;
+}
