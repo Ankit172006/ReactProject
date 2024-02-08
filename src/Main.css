@@ -36,6 +36,10 @@
     font-weight: 500;
     color: #ffffff;
 }
+.video_title p
+{
+    margin: 0;
+}
 .lower_container
 {
     display: flex;

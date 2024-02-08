@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "./Nav.css"
 
 function Nav() {
@@ -7,7 +8,9 @@ function Nav() {
       <div className="main_navbar_container">
         <ul>
             <li><a href="">All</a></li>
+            {/* <Link to="./display"> */}
             <li><a href="">Mixes</a></li>
+            {/* </Link> */}
             <li><a href="">Gaming</a></li>
             <li><a href="">Music</a></li>
             <li><a href="">Test Cricket</a></li>

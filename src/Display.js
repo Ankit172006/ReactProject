@@ -43,11 +43,11 @@ function Display() {
                 <div class="dropdown">
                 <button style={{height:"36px",display:"flex",alignItems:"center"}} class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
-	<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-		<path d="M0 0h24v24H0z" />
-		<path fill="white" d="M17.451 2.344a1 1 0 0 1 1.41-.099a12.05 12.05 0 0 1 3.048 4.064a1 1 0 1 1-1.818.836a10.05 10.05 0 0 0-2.54-3.39a1 1 0 0 1-.1-1.41zM5.136 2.245a1 1 0 0 1 1.312 1.51a10.05 10.05 0 0 0-2.54 3.39a1 1 0 1 1-1.817-.835a12.05 12.05 0 0 1 3.045-4.065M14.235 19c.865 0 1.322 1.024.745 1.668A3.992 3.992 0 0 1 12 22a3.992 3.992 0 0 1-2.98-1.332c-.552-.616-.158-1.579.634-1.661l.11-.006zM12 2c1.358 0 2.506.903 2.875 2.141l.046.171l.008.043a8.013 8.013 0 0 1 4.024 6.069l.028.287L19 11v2.931l.021.136a3 3 0 0 0 1.143 1.847l.167.117l.162.099c.86.487.56 1.766-.377 1.864L20 18H4c-1.028 0-1.387-1.364-.493-1.87a3 3 0 0 0 1.472-2.063L5 13.924l.001-2.97A8 8 0 0 1 8.822 4.5l.248-.146l.01-.043a3.003 3.003 0 0 1 2.562-2.29l.182-.017z" />
-	</g>
-</svg>
+	            <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+		        <path d="M0 0h24v24H0z" />
+	        	<path fill="white" d="M17.451 2.344a1 1 0 0 1 1.41-.099a12.05 12.05 0 0 1 3.048 4.064a1 1 0 1 1-1.818.836a10.05 10.05 0 0 0-2.54-3.39a1 1 0 0 1-.1-1.41zM5.136 2.245a1 1 0 0 1 1.312 1.51a10.05 10.05 0 0 0-2.54 3.39a1 1 0 1 1-1.817-.835a12.05 12.05 0 0 1 3.045-4.065M14.235 19c.865 0 1.322 1.024.745 1.668A3.992 3.992 0 0 1 12 22a3.992 3.992 0 0 1-2.98-1.332c-.552-.616-.158-1.579.634-1.661l.11-.006zM12 2c1.358 0 2.506.903 2.875 2.141l.046.171l.008.043a8.013 8.013 0 0 1 4.024 6.069l.028.287L19 11v2.931l.021.136a3 3 0 0 0 1.143 1.847l.167.117l.162.099c.86.487.56 1.766-.377 1.864L20 18H4c-1.028 0-1.387-1.364-.493-1.87a3 3 0 0 0 1.472-2.063L5 13.924l.001-2.97A8 8 0 0 1 8.822 4.5l.248-.146l.01-.043a3.003 3.003 0 0 1 2.562-2.29l.182-.017z" />
+	           </g>
+               </svg>
                 Subscribe
                 </button>
                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -66,8 +66,8 @@ function Display() {
 <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="28px" height="24px" viewBox="0 0 24 24">
 	<path fill="white" d="M10.375 2.25a4.125 4.125 0 1 0 0 8.25a4.125 4.125 0 0 0 0-8.25m0 9.75a7.125 7.125 0 0 0-7.124 7.247a.75.75 0 0 0 .363.63a13.067 13.067 0 0 0 6.761 1.873c2.472 0 4.786-.684 6.76-1.873a.75.75 0 0 0 .364-.63l.001-.12v-.002A7.125 7.125 0 0 0 10.375 12M16 9.75a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5z" />
 </svg>Unsubscribe</a></li>
-  </ul>
-</div>
+               </ul>
+                   </div>
                 </div>
                 </div>
                 <div className="action_button">
@@ -132,6 +132,32 @@ function Display() {
                       <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore neque ratione rerum maiores laboriosam molestias repellat totam fugit quibusdam similique hic repellendus eos porro nihil, qui recusandae! Amet, explicabo repudiandae.</span>  
                     </div>
                 </div>
+            </div>
+            <div className="comment_container">
+            <div className="upper_comment">
+             <div className="mail_name">
+                <a id='mail_name' href="">A</a>
+             </div>
+             <div className="input_container">
+                <div className="first_part">
+                    <input type="text" placeholder='Add a comment...'/>
+                </div>
+                <div className="second_container">
+                    <div className="emojy">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 32 32">
+	                 <path fill="white" d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.065 0 11 4.935 11 11s-4.935 11-11 11S5 22.065 5 16S9.935 5 16 5m-5 7c-2.094 0-3.61 1.207-3.61 1.207l1.22 1.586S9.692 14 11.001 14s2.39.793 2.39.793l1.22-1.586C14.608 13.207 13.093 12 11 12m10 0c-2.094 0-3.61 1.207-3.61 1.207l1.22 1.586S19.692 14 21.001 14s2.39.793 2.39.793l1.22-1.586C24.608 13.207 23.093 12 21 12m-10.19 7l-1.72 1a8.111 8.111 0 0 0 2.87 2.896c.297.176.604.333.923.47a7.894 7.894 0 0 0 2.031.56a7.988 7.988 0 0 0 2.172 0a7.953 7.953 0 0 0 4.572-2.293A8.14 8.14 0 0 0 22.91 20l-1.72-1a5.996 5.996 0 0 1-6.795 2.783a5.922 5.922 0 0 1-1.436-.611A6.02 6.02 0 0 1 10.811 19z" />
+                    </svg>
+                    </div>
+                    <div className="button_comment">
+                        <button id='cancel'>Cancel</button>
+                        <button id='comment'>Comment</button>
+                    </div>
+                </div>
+             </div>
+            </div> 
+            <div className="main_comment_part">
+
+            </div>
             </div>
         </div>
         <div className="right_display_container">

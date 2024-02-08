@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Header.css"
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function Header() {
 
@@ -8,16 +8,16 @@ function Header() {
     <div>
       <div className="mainheader">
         <div className="first_section">
-          {/* <Link to="/"> */}
+          {/* <Link to="/App"> */}
             <div className="hamber_gun">
             <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 2048 2048"><path fill="currentColor" d="M2048 640H0V512h2048zm0 1024H0v-128h2048zm0-513H0v-127h2048z"/></svg>
             </div>
             {/* </Link> */}
-           {/* <Link to="/display"> */}
+           <Link to='/display'>
             <div className="main_logo">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEKg2LqGnCrSRHciLgPtI43Pp6X_Wm_Utyrw&usqp=CAU" alt="" />
             </div>
-            {/* </Link> */}
+            </Link>
         </div>
         <div className="second_section"> 
           <div className="search_bar">
