@@ -12,7 +12,7 @@
 }
 .mainimg
 {
-    width: 400px;
+    /* width: 400px; */
     border-radius: 10px;
 }
 .channel_logo_image
@@ -75,4 +75,12 @@
 .channel_name
 {
     height: 18px;
+}
+
+@media screen and (max-width: 480px)
+{
+.new_div_video
+{
+    flex-direction: column;
+}
 }

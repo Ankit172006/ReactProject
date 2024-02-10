@@ -2,14 +2,14 @@ import React from 'react'
 
 import "./Main.css"
 import {Link} from 'react-router-dom'
-// import HoverVideoPlayer from 'react-hover-video-player';
-const Main = function main(Main){
+// import HoverVideoPlayer from 'react-hover-video-player';  {videoname,posterimg,channellogo,videotitle,channelname,views,time}
+const Main = function main(props){
   return (
     <div className='main_container'>
         <div className="upper_container">
             <div className="video_container">
-            <video className='mainimg' poster={Main.posterimg}  controls={Main.controlsvalue} >
-            <source src={Main.videoname} type="video/mp4"/>
+             <video className='mainimg'   controls={props.controlsvalue}  >
+            <source src={props.videoname} type="video/mp4"/>
             </video>
             </div>
         </div>
@@ -17,7 +17,7 @@ const Main = function main(Main){
         <div className="lower_left_container">
        
             <div className="channel_logo_image">
-              <img className='channel_logo' src={Main.channellogo} alt="" />
+              <img className='channel_logo' src={props.logochannel} alt="" />
             </div>
           
         </div>
@@ -25,20 +25,20 @@ const Main = function main(Main){
             <div className="lower_upper_container">
               {/* <Link to="/display"> */}
                 <div className="video_title">
-                  <p className='video_title'>{Main.videotitle}</p>
+                  <p className='video_title'>{props.videotitle}</p>
                 </div>
                 {/* </Link> */}
             </div>
             <div className="lower_lower_container">
                 <div className="channel_name">
-                  <a href="">{Main.channelname}</a>
+                  <a href="">{props.channelname}</a>
                 </div>
                 <div className="time_views">
                   <div className="view_part">
-                    <a href="">{Main.views}</a>
+                    <a href="">{props.views}</a>
                   </div>
                   <div className="time_part">
-                    <a href="">{Main.time}</a>
+                    <a href="">{props.time}</a>
                   </div>
                 </div>
 

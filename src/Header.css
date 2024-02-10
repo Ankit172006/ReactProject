@@ -113,3 +113,14 @@
     align-items: center;
     justify-content: center;
 }
+@media screen and (max-width: 480px)
+{
+    .hamber_gun
+    {
+        display: none;
+    }
+    .second_section
+    {
+        display: none;
+    }
+}

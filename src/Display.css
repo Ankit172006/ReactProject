@@ -373,3 +373,64 @@ height: 150px;
 {
     cursor: pointer;
 }
+@media screen and (max-width: 480px)
+{
+    .width_container
+    {
+        flex-direction: column;
+    }
+    .main_display_container
+    {
+       flex-direction: column;
+    }
+    .left_display_container
+    {
+        width: 412px;
+        margin: 0px;
+    }
+    .real_video_container
+    {
+        width: 412px;
+        height: 230px;
+    }
+    .lower_toprow_container
+    {
+        flex-direction: column;
+    }
+    .action_button
+    {
+       padding-left: 0px;
+       width: 402px;
+       gap: 7px;
+       margin: 5px;
+    }
+    .discription_part
+    {
+        width: 402px;
+        height: 166px;
+        margin: 5px;
+    }
+    .first_part input 
+    {
+        width: 250px;
+    }
+    .second_container
+    {
+        display: flex;
+        justify-content: center;
+        gap: 90px;
+        margin-top: 5px;
+    }
+    .right_display_container
+    {
+        width: 412px;
+    }
+    .frist_action_button
+    {
+        margin: 5px;
+    }
+    .subscriber_button
+    {
+        width: 200px;
+    }
+}

@@ -43,3 +43,11 @@
     color: #fff;
     margin: 5px;
 }
+@media screen and (max-width: 480px)
+{
+    .main_navbar_container
+    {
+        padding-left: 0px;
+        
+    }
+}

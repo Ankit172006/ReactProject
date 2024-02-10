@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from "./Header.js"
 import video1 from "./video/video1.mp4"
+import video2 from "./video/video2.mp4"
 import Rightvideo from './Rightvideo.js'
 import { Link } from 'react-router-dom'
 // import "./Main.css"
@@ -16,8 +17,8 @@ function Display() {
         <div className="left_display_container">
             <div className="real_video_container">
                 <div className="video_player">
-                <video className='mainimgnew' controls >
-            <source src={video1} type="video/mp4"/>
+                <video className='mainimgnew' controls autoPlay >
+                <source src={video1} type="video/mp4"/>
             </video>
                 </div>
             </div>
