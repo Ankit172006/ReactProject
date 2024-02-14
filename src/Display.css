@@ -45,6 +45,7 @@
     height:98px ;
     display: flex;
     gap: 10px;
+    padding-left: 10px;
 }
 .mainimgnew
 {
@@ -372,6 +373,23 @@ height: 150px;
 .action_button
 {
     cursor: pointer;
+}
+.ankit
+{
+    display: flex;
+    flex-direction: column;
+}
+.gmaillogo
+{
+    color: #fff;
+    font-weight: 500;
+}
+
+.comment_line
+{
+    color: #fff;
+    font-weight: 500;
+    font-family: cursive;
 }
 @media screen and (max-width: 480px)
 {

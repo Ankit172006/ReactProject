@@ -124,3 +124,14 @@
         display: none;
     }
 }
+@media screen and (max-width:768px)
+{
+.first_section
+{
+    width: 220px;
+}
+.search_bar{
+    width: 320px;
+}
+
+}

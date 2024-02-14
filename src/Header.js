@@ -8,16 +8,14 @@ function Header() {
     <div>
       <div className="mainheader">
         <div className="first_section">
-          {/* <Link to="/App"> */}
-            <div className="hamber_gun">
+        <div className="hamber_gun">
             <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 2048 2048"><path fill="currentColor" d="M2048 640H0V512h2048zm0 1024H0v-128h2048zm0-513H0v-127h2048z"/></svg>
-            </div>
-            {/* </Link> */}
-           <Link to='/'>
-            <div className="main_logo">
+        </div>
+        <Link to='/'>
+        <div className="main_logo">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEKg2LqGnCrSRHciLgPtI43Pp6X_Wm_Utyrw&usqp=CAU" alt="" />
-            </div>
-            </Link>
+        </div>
+        </Link>
         </div>
         <div className="second_section"> 
           <div className="search_bar">
@@ -36,18 +34,14 @@ function Header() {
             </div>
             <div className="notification">
             <svg xmlns="http://www.w3.org/2000/svg" width="23px" height="23px" viewBox="0 0 24 24"><path fill="currentColor" d="M4 8a8 8 0 1 1 16 0v4.697l2 3V20h-5.611a4.502 4.502 0 0 1-8.777 0H2v-4.303l2-3zm5.708 12a2.5 2.5 0 0 0 4.584 0zM12 2a6 6 0 0 0-6 6v5.303l-2 3V18h16v-1.697l-2-3V8a6 6 0 0 0-6-6"/></svg>
-            </div>
-            
+            </div> 
             <div className="gmail_section">
-           
-                <a href="#">A</a>
-              
+            <a href="#">A</a>  
             </div>
-            
         </div>
       </div>
     </div>
   )
 }
-
+// .env and lazy load
 export default Header

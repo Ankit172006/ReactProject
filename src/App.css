@@ -63,3 +63,14 @@
     flex-direction: column;
 }
 }
+@media screen and (max-width:768px)
+{
+    .left_side
+    {
+        width: 31%;
+    }
+    .App_main_contant_container
+    {
+        width: 747px;
+    }
+}

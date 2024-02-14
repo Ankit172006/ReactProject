@@ -1,14 +1,81 @@
-import React from 'react'
+import React, { createElement } from 'react'
 import Header from "./Header.js"
 import video1 from "./video/video1.mp4"
 import video2 from "./video/video2.mp4"
 import Rightvideo from './Rightvideo.js'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 // import "./Main.css"
 import "./Header.css"
 import "./Display.css"
 
 function Display() {
+    const videodata = [
+        {
+         id:"1",
+         videotitle:"Ind Vs Eng, 2nd Test : Yashasvi Jaiswal की Superb Innings के ये हैं 3 गुनहगार | Rohi",
+         videoname:video1,
+         posterimg:"https://i.ytimg.com/vi/_vox_-nfjuw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCYYwhCXi2nncZy5mEhosrCUI6V7A",
+         logochannel:"https://yt3.ggpht.com/49eUE89RL69LuncBcF5xccRkff2fRlJytQuZ5vOgIzgOYLc5Bo9beP6uNCE_AOwpT2iqqC_ygq4=s88-c-k-c0x00ffffff-no-rj",
+         channelname:"News24 Sports",
+         views:"11k views",
+         channelname:"News Sports 24",
+         time:"11 min ago"
+        },
+        {
+         id:"2",
+         videotitle:"Punjabi Songs 2021 | KIKLI : KPTAAN FT Ghost (Official Video) Tru G | Punjabi Songs 2021",
+         videoname:video2,
+         posterimg:"https://i.ytimg.com/vi/4SAh_g8pf64/hqdefault.jpg?sqp=-oaymwExCOADEI4CSFryq4qpAyMIARUAAIhCGAHwAQH4Af4JgALQBYoCDAgAEAEYciBmKBEwDw==&rs=AOn4CLDeeWsP8PPPi8NWDojYRoFcRTrtEg",
+         logochannel:"https://yt3.ggpht.com/ytc/AIf8zZScEeN2LrwAO2mMQQT55TfEQ8CV2BN6_lC85jD6qg=s88-c-k-c0x00ffffff-no-rj",
+         channelname:"47 Records",
+         views:"39M",
+         time:"4 years"
+        },
+        {
+         id:"3",
+         videotitle:"Ind Vs Eng, 2nd Test : Yashasvi Jaiswal की Superb Innings के ये हैं 3 गुनहगार | Rohi",
+         videoname:video1,
+         posterimg:"https://i.ytimg.com/vi/_vox_-nfjuw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCYYwhCXi2nncZy5mEhosrCUI6V7A",
+         logochannel:"https://yt3.ggpht.com/49eUE89RL69LuncBcF5xccRkff2fRlJytQuZ5vOgIzgOYLc5Bo9beP6uNCE_AOwpT2iqqC_ygq4=s88-c-k-c0x00ffffff-no-rj",
+         channelname:"News24 Sports",
+         views:"11k",
+         channelname:"News Sports 24",
+         time:"11 min"
+        },
+    ]
+    const input=document.querySelector("#input").value
+    console.log(input)
+    const [searchTerm, setSearchTerm] = useState('');
+    const handleChange = (event) => {
+        setSearchTerm(event.target.value);
+      };
+ 
+     var ankit=document.querySelector('.ankit')
+     var karan=document.querySelector('.karan')
+     const commentElement = document.createElement('p');
+     commentElement.classList.add('comment_line')
+     var number=0;
+      const comment = function maincomment() 
+    
+        {
+          number++
+          ankit.innerHTML=number+'Comments'       
+          const num= Math.floor(Math.random()*26)
+          const gmailname = document.createElement('p')
+          gmailname.classList.add('gmaillogo')
+          var letter = String.fromCharCode(num + 64);
+          gmailname.textContent=letter
+          karan.append(letter)
+          console.log(gmailname)
+
+          if (input !== '') {
+            commentElement.textContent = input;
+            karan.appendChild(commentElement); 
+            setSearchTerm(''); 
+          } 
+          
+      }
   return (
     <div>
     <Header/>
@@ -17,14 +84,15 @@ function Display() {
         <div className="left_display_container">
             <div className="real_video_container">
                 <div className="video_player">
-                <video className='mainimgnew' controls autoPlay >
+                
+                <video className='mainimgnew' controls >
                 <source src={video1} type="video/mp4"/>
             </video>
                 </div>
             </div>
             <div className="lower-video_container">
                 <div className="lower_title_part">
-                 <h1 className='title_main_container'>Ind Vs Eng, 2nd Test : Yashasvi Jaiswal की Superb Innings के ये</h1>   
+                 <h1 className='title_main_container'></h1>   
                 </div>
                 <div className="lower_toprow_container">
                 <div className="frist_action_button">
@@ -139,9 +207,10 @@ function Display() {
              <div className="mail_name">
                 <a id='mail_name' href="">A</a>
              </div>
+             
              <div className="input_container">
                 <div className="first_part">
-                    <input type="text" placeholder='Add a comment...'/>
+                    <input type="text" id='input' value={searchTerm} onChange={handleChange} placeholder='Add a comment...'/>
                 </div>
                 <div className="second_container">
                     <div className="emojy">
@@ -151,13 +220,18 @@ function Display() {
                     </div>
                     <div className="button_comment">
                         <button id='cancel'>Cancel</button>
-                        <button id='comment'>Comment</button>
+                        <button id='comment'type='submit' onClick={comment}>Comment</button>
                     </div>
                 </div>
              </div>
             </div> 
-            <div className="main_comment_part">
+            <div className="main_comment_part ">
+               <h1 className='ankit'>
+               <p></p>
+               </h1>
 
+                <p className='karan'></p>
+                 
             </div>
             </div>
         </div>
@@ -177,6 +251,9 @@ function Display() {
     </div>
     </div>
   )
-}
+  }
+
 
 export default Display
+
+//https://youtube.com/shorts/NRTuY24T928?si=gN5QXD8pSM25NTzQ

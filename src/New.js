@@ -13,7 +13,7 @@ import Videodata from './Videodata.js'
 export default function New() {
 
   return (
-    <div>
+   
     <div>
 
 <Header/>
@@ -29,6 +29,5 @@ export default function New() {
 </div>
 </div>
 </div>
-    </div>
   )
 }

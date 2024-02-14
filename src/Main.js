@@ -1,8 +1,5 @@
 import React from 'react'
-
 import "./Main.css"
-import {Link} from 'react-router-dom'
-// import HoverVideoPlayer from 'react-hover-video-player';  {videoname,posterimg,channellogo,videotitle,channelname,views,time}
 const Main = function main(props){
   return (
     <div className='main_container'>
@@ -46,9 +43,6 @@ const Main = function main(props){
         </div>
   
       </div>
-      {/* <video src="./video/video1.mp4" type='mp4'></video> */}
-
-    
     </div>
   )
 }

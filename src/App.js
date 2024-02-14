@@ -1,22 +1,21 @@
 import React from 'react'
 import Display from "./Display.js"
 import Home from './Home.js'
-
-// import New from "./New.js"
+// import Apifatch from "./video/Apifatch.js"
 import { BrowserRouter,Routes,Route} from 'react-router-dom'
 import "./App.css"
 function App() {
   return (
   
-  <div>
+ 
        <BrowserRouter>
        <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/Display" element={<Display/>} />
+        <Route path="/display" element={<Display/>} />
         </Routes>
         </BrowserRouter>
 
-     </div>
+ 
   )
 }
 

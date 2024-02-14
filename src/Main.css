@@ -76,11 +76,21 @@
 {
     height: 18px;
 }
-
+.new_div_video
+{
+    display: flex;
+}
 @media screen and (max-width: 480px)
 {
 .new_div_video
 {
     flex-direction: column;
 }
+}
+@media screen and (max-width:768px)
+{
+    .new_div_video
+    {
+    flex-direction: column;
+    }
 }
