@@ -44,8 +44,6 @@ function Display() {
          time:"11 min"
         },
     ]
-    const input=document.querySelector("#input").value
-    console.log(input)
     const [searchTerm, setSearchTerm] = useState('');
     const handleChange = (event) => {
         setSearchTerm(event.target.value);
@@ -69,8 +67,8 @@ function Display() {
           karan.append(letter)
           console.log(gmailname)
 
-          if (input !== '') {
-            commentElement.textContent = input;
+          if (searchTerm !== '') {
+            commentElement.textContent = searchTerm;
             karan.appendChild(commentElement); 
             setSearchTerm(''); 
           } 
@@ -230,7 +228,9 @@ function Display() {
                <p></p>
                </h1>
 
-                <p className='karan'></p>
+                <p className='karan'>
+                 
+                </p>
                  
             </div>
             </div>
