@@ -3,7 +3,7 @@ import Header from "./Header.js"
 import video1 from "./video/video1.mp4"
 import video2 from "./video/video2.mp4"
 import Rightvideo from './Rightvideo.js'
-import { Link } from 'react-router-dom'
+import { TypeAnimation } from 'react-type-animation';
 import { useState } from 'react'
 // import "./Main.css"
 import "./Header.css"
@@ -44,35 +44,47 @@ function Display() {
          time:"11 min"
         },
     ]
+
+     const functioncontainer = ()=>
+     {
+        plusnumber();
+        maincomment();
+        randomcolorgen()
+     };
+
     const [searchTerm, setSearchTerm] = useState('');
+    var [numberplus,setnumber] = useState(0);
     const handleChange = (event) => {
         setSearchTerm(event.target.value);
       };
- 
-     var ankit=document.querySelector('.ankit')
      var karan=document.querySelector('.karan')
      const commentElement = document.createElement('p');
      commentElement.classList.add('comment_line')
-     var number=0;
-      const comment = function maincomment() 
+
+      function plusnumber()
+     {
+       setnumber(numberplus+1)
+     }
+      function maincomment() 
     
-        {
-          number++
-          ankit.innerHTML=number+'Comments'       
+        { 
+          if (searchTerm !== '') {
+            commentElement.textContent = searchTerm+' '+' '+' : #Thanks for your Comment';
+            karan.appendChild(commentElement); 
+            setSearchTerm(''); 
+          } 
           const num= Math.floor(Math.random()*26)
           const gmailname = document.createElement('p')
           gmailname.classList.add('gmaillogo')
           var letter = String.fromCharCode(num + 64);
           gmailname.textContent=letter
-          karan.append(letter)
-          console.log(gmailname)
-
-          if (searchTerm !== '') {
-            commentElement.textContent = searchTerm;
-            karan.appendChild(commentElement); 
-            setSearchTerm(''); 
-          } 
-          
+          commentElement.prepend(gmailname)
+      }
+      const icon=document.querySelector('.gamillogo')
+      function randomcolorgen(){
+        const randomColor = Math.floor(Math.random()*16777215).toString(16);
+        icon.style.backgroundColor = "#" + randomColor;
+        // color.innerHTML = "#" + randomColor;
       }
   return (
     <div>
@@ -218,14 +230,27 @@ function Display() {
                     </div>
                     <div className="button_comment">
                         <button id='cancel'>Cancel</button>
-                        <button id='comment'type='submit' onClick={comment}>Comment</button>
+                        <button id='comment'type='submit' onClick={functioncontainer} >Comment</button>
                     </div>
                 </div>
              </div>
             </div> 
             <div className="main_comment_part ">
-               <h1 className='ankit'>
-               <p></p>
+          
+               <div className='animation'>
+               <TypeAnimation
+                sequence={[
+               `Write a Comment!`,
+                1000,
+                 "",
+                 ]}
+                 speed={500}
+                 style={{ whiteSpace: 'pre-line', fontSize: '2em' }}
+                 repeat={Infinity}
+                 />
+                </div>
+                <h1 className='ankit'>
+               <p>{numberplus+' ' +'Comments...'}</p>
                </h1>
 
                 <p className='karan'>

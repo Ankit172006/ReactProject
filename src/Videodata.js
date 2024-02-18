@@ -33,7 +33,6 @@ function Videodata() {
         logochannel:"https://yt3.ggpht.com/49eUE89RL69LuncBcF5xccRkff2fRlJytQuZ5vOgIzgOYLc5Bo9beP6uNCE_AOwpT2iqqC_ygq4=s88-c-k-c0x00ffffff-no-rj",
         channelname:"News24 Sports",
         views:"11k views",
-        channelname:"Code with Ankit",
         time:"11 min ago"
        },
        ] 

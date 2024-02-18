@@ -383,13 +383,41 @@ height: 150px;
 {
     color: #fff;
     font-weight: 500;
+    background-color: rgb(25, 10, 230);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
 }
 
 .comment_line
 {
     color: #fff;
     font-weight: 500;
-    font-family: cursive;
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    font-size: 18px;
+}
+.karan
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.ankit p
+{
+    color: #fff;
+    font-size: 30px;
+}
+.animation
+{
+    font-size: 16px;
+    color: #1100ff;
+    font-weight: 600;
 }
 @media screen and (max-width: 480px)
 {
